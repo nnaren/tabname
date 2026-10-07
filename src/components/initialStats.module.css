@@ -1,0 +1,8 @@
+.section { padding: 5px 0 12px; }
+.section h2 { margin: 0 0 8px; color: var(--ink-muted); font-size: 18px; font-weight: 600; }
+.section h2 span { color: var(--ink-primary); }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.initialChip, .stat, .total { display: inline-flex; align-items: center; gap: 6px; min-height: 38px; padding: 5px 12px; border-radius: var(--radius-pill); background: var(--surface-card); color: var(--ink-muted); }
+.stat strong { color: var(--ink-stat-initial); font-size: 17px; }
+.total { background: var(--surface-total); color: var(--ink-total); }
+.total strong { font-size: 18px; }

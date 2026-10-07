@@ -1,0 +1,6 @@
+import type { RecruitmentRow } from '../types';
+import styles from './recruitment.module.css';
+
+export function RecruitmentTable({ unitName, rows }: { unitName: string; rows: RecruitmentRow[] }) {
+  return <section className={styles.section}><table className={styles.table}><caption className="srOnly">{unitName}招募路线与条件</caption><thead><tr>{['路线','名声','支援','交涉','交涉内容','最早加入 · 地点'].map((heading) => <th scope="col" key={heading}>{heading}</th>)}</tr></thead><tbody>{rows.map((row) => <tr key={row.route}><th scope="row" className={styles[row.hue]}>{row.route} <span className={styles[row.markerColor]}>{row.marker === 'flag' ? '⚑' : '●'}</span></th><td data-label="名声">{row.reputationLevel !== undefined && <strong>LV{row.reputationLevel}</strong>}</td><td data-label="支援">{row.supportLevel !== undefined && <strong>LV{row.supportLevel}</strong>}</td><td data-label="交涉"><span className={styles.badge}>{row.negotiationBadge}</span></td><td data-label="交涉内容"><span>{row.negotiation}</span><span className={styles[row.detailTone]}>{row.detailTone === 'red' ? '►' : row.detailTone === 'green' ? '●' : ''} {row.negotiationDetail}</span></td><td data-label="最早加入 · 地点">{row.availability}</td></tr>)}</tbody></table></section>;
+}

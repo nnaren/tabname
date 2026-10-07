@@ -1,0 +1,8 @@
+.header { display: flex; align-items: flex-start; justify-content: space-between; min-height: 54px; padding: 7px 8px 3px; }
+.identity { display: flex; align-items: center; gap: 10px; }
+.identity h1 { margin: 0; font-size: 32px; line-height: 1; letter-spacing: .04em; }
+.gender, .classPill { border-radius: var(--radius-pill); font-weight: 700; line-height: 1; }
+.gender { padding: 8px 11px; background: var(--accent-blue-bg); color: var(--accent-blue-ink); }
+.classPill { padding: 8px 14px; background: var(--surface-card); color: var(--ink-primary); }
+.wordmark { width: 240px; height: 32px; opacity: .72; }
+@media (max-width: 768px) { .wordmark { width: 160px; } .identity h1 { font-size: 27px; } }

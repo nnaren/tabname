@@ -1,0 +1,14 @@
+.section { padding: 8px 0 0; }
+.section h2, .section h2 .chips { display: flex; align-items: center; gap: 10px; }
+.section h2 { margin: 0 0 8px; color: var(--ink-muted); font-size: 20px; font-weight: 600; }
+.chips { flex-wrap: wrap; }
+.chip, .skillName { border: 1px solid var(--border-card); border-radius: var(--radius-sm); background: var(--surface-card); color: var(--ink-primary); }
+.chip { padding: 4px 14px; font-size: 16px; }
+.skillRow { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; min-height: 43px; font-size: 17px; }
+.personal, .privilege { padding: 5px 11px; border-radius: var(--radius-sm); font-weight: 700; }
+.personal { background: var(--surface-card); color: var(--ink-primary); }
+.privilege { background: var(--surface-chip-lv); color: var(--ink-chip-lv); }
+.skillName { padding: 4px 12px; font-weight: 700; }
+.classTag, .effect { color: var(--ink-primary); }
+.level { color: var(--ink-lv-marker); }
+@media (max-width: 767px) { .section h2 { font-size: 18px; } .skillRow { font-size: 15px; gap: 6px; } }

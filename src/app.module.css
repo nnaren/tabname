@@ -1,0 +1,8 @@
+.app { min-height: 100vh; padding: 0 var(--page-pad) 24px; background: var(--bg-page); }
+.heroGrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(360px, 26%); gap: 28px; align-items: start; }
+.content { min-width: 0; }
+.portraitWrap { padding-top: 126px; }
+@media (min-width: 1974px) { .app { padding-left: 8px; padding-right: 32px; } .heroGrid { grid-template-columns: minmax(0, 1fr) 492px; } }
+@media (max-width: 1439px) { .heroGrid { grid-template-columns: minmax(0, 1fr) minmax(360px, 38%); gap: 18px; } }
+@media (max-width: 1023px) { .heroGrid { grid-template-columns: 1fr; } .portraitWrap { order: -1; max-width: 620px; padding-top: 4px; justify-self: stretch; } }
+@media (max-width: 767px) { .app { padding: 0 10px 18px; } .heroGrid { gap: 6px; } .portraitWrap { max-width: none; } }

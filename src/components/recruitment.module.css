@@ -1,0 +1,12 @@
+.section { margin-top: 24px; }
+.table { width: 100%; color: var(--ink-primary); font-size: 16px; }
+.table th, .table td { padding: 13px 16px; border: 1px solid var(--border-table); background: var(--surface-card); text-align: left; vertical-align: middle; }
+.table thead th { font-size: 17px; }
+.table tbody th { font-weight: 800; }
+.routeOne { color: var(--route-link-1); } .routeTwo { color: var(--route-link-2); }
+.table td strong { color: var(--ink-primary); font-size: 17px; }
+.flag { color: var(--marker-flag); margin-left: 6px; } .green { color: var(--ink-annot-green); margin-left: 6px; } .dot { color: var(--ink-annot-green); margin-left: 6px; }
+.badge { display: inline-grid; place-items: center; min-width: 28px; height: 28px; border-radius: 50%; background: var(--surface-badge); color: var(--ink-badge-gold); font-weight: 800; }
+.red, .green, .neutral { display: block; margin-top: 6px; font-weight: 600; }
+.red { color: var(--ink-annot-red); } .green { color: var(--ink-annot-green); }
+@media (max-width: 767px) { .table, .table thead, .table tbody, .table tr, .table th, .table td { display: block; } .table thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); } .table tr { margin-bottom: 14px; } .table td, .table tbody th { display: flex; justify-content: space-between; gap: 14px; } .table td::before { content: attr(data-label); color: var(--ink-muted); font-weight: 700; } }

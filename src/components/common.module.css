@@ -1,0 +1,4 @@
+.helpWrap { position: relative; display: inline-flex; vertical-align: middle; }
+.helpButton { display: inline-grid; place-items: center; width: 25px; height: 25px; padding: 0; border: 0; border-radius: 50%; background: var(--help-badge); color: var(--pill-gold-ink); font-weight: 800; cursor: pointer; }
+.tooltip { position: absolute; z-index: 5; top: calc(100% + 8px); left: 50%; width: 180px; padding: 8px 10px; transform: translateX(-50%); border: 1px solid var(--border-card); border-radius: var(--radius-sm); background: var(--surface-card); color: var(--ink-primary); box-shadow: var(--shadow-pop); font-size: 12px; text-align: left; }
+.tooltipOpen { display: block; }

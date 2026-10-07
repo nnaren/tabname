@@ -1,0 +1,11 @@
+.panel { margin: 4px 0 10px; border-top: 1px solid var(--border-card); border-bottom: 1px solid var(--border-card); }
+.trigger { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; width: 100%; min-height: 64px; padding: 8px 20px; border: 0; background: transparent; color: var(--ink-primary); text-align: left; cursor: pointer; }
+.pill { padding: 7px 22px; border-radius: var(--radius-pill); background: var(--pill-dark); color: var(--pill-ink); font-size: 20px; font-weight: 800; }
+.trigger strong { font-size: 19px; }
+.hint { color: var(--ink-muted); }
+.details { display: flex; flex-wrap: wrap; gap: 18px; padding: 0 20px 12px; }
+.detailGroup { display: flex; flex-wrap: wrap; gap: 8px; color: var(--ink-muted); }
+.detailGroup b { color: var(--ink-primary); }
+.detailGroup span { padding: 3px 8px; border: 1px solid var(--border-card); border-radius: var(--radius-sm); background: var(--surface-card); }
+@media (prefers-reduced-motion: no-preference) { .details { transition: opacity .18s ease; } }
+@media (max-width: 767px) { .trigger { gap: 8px; padding: 8px 4px; } .pill { font-size: 17px; } .trigger strong { font-size: 16px; } .hint { width: 100%; } }
